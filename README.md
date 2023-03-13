@@ -12,6 +12,17 @@ We provide a stand-alone Jupyter notebook as a companion to the manuscript. The 
 
 ### Installing the Conda virtual environment
 
-Please make sure you have [Anaconda](https://www.anaconda.com/) installed. 
+Please make sure you have [Anaconda](https://www.anaconda.com/) installed. After cloning, open the repository folder in a terminal window and type: 
+```
+conda env create -f bitle_segregation.yml
+```
+this will create a new Python virtual environment with all the required libraries
 
-In order to run the analysis, clone this repository and download the processed functional connectivity matrices from the OSF link above. After download, place the downloaded binary file in the `/data` folder and open the the `code/processing_analysis_final.ipynb` notebook. If the conda environment was setup appropriately and the connectivity matrices were placed in the correct folder, everything should run correctly.
+Activate the environment with: 
+```
+conda activate bitle_segregation
+```
+
+### Running the Jupyter notebook
+
+In order to run the analysis, clone this repository, install the conda virtual environment and download the processed functional connectivity matrices from the OSF link above. After download, place the downloaded binary file in the `/data` folder and open the the `code/processing_analysis_final.ipynb` notebook. If the conda environment was setup appropriately and the connectivity matrices were placed in the correct folder, everything should run correctly.
